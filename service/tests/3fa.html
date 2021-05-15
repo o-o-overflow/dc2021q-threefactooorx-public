@@ -1,0 +1,60 @@
+<html>
+  <style>
+    input[type=text], select {
+      width: 100%;
+    }
+  </style>
+
+  <div id="3fa">
+    <form action="/somewhereovertherainbow">
+      <label for="username">username:</label>
+      <input type="text" id="username" name="username" value="admin"><br><br>
+      <label for="password">password:</label>
+      <input type="text" id="password" name="password" value="somewhereovertherainbow"><br><br>
+      <label for="thirdfactooor">thirdfactooor:</label>
+      <input type="text" id="thirdfactooor" name="thirdfactooor" value=""><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    this is a test
+    <div>just a child</div>
+    <div id="test">just another child
+      <div>just a subchild<div tost=1>just a subsubchild<div>just a child<div test="tots">just a child</div></div></div></div>
+    </div>
+  </div>
+
+
+  <script>
+    var targetNode = document.getElementById("3fa");
+    cl = document.createAttribute("class"); 
+    cl.value = "test";
+    targetNode.setAttributeNode(cl)
+    cl2 = document.createAttribute("class");
+    cl2.value = "THEORDERISHERE";
+    targetNode.setAttributeNode(cl2)
+    cl3 = document.createAttribute("THEORDERCLASS");
+    cl3.value = "THEORDERISDEFINITELYHERE";
+    targetNode.setAttributeNode(cl3)
+
+
+    // add node
+    div = document.createElement("div")
+    div.setAttribute("id", "something")
+    targetNode.appendChild(div);
+    div2 = document.createElement("div")
+    div2.setAttribute("id", "somethingelse")
+    targetNode.appendChild(div2)
+    div3 = document.createElement("div")
+    div3.setAttribute("id", "s0methingelse")
+    targetNode.appendChild(div3)
+    div4 = document.createElement("div")
+    div4.setAttribute("id", "som3thingelse")
+    targetNode.appendChild(div4)
+    div5 = document.createElement("div")
+    div5.setAttribute("id", "som3thingels3")
+    targetNode.appendChild(div5)
+
+    targetNode.removeChild(div3);
+    targetNode.removeChild(div5);
+    targetNode.removeChild(div);
+  </script>
+</html>
